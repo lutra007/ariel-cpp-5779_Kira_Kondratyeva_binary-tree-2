@@ -1,0 +1,86 @@
+lutra@edge:~/Dropbox/Study/ArielUni/homeworks-cpp/binary-tree-1/ariel-cpp-5779_Kira_Kondratyeva_binary-tree-2$ make; ./a.out > output.txt
+Current size is 0
+Insert 5
+Insert 3
+Insert 6
+Insert 4
+Insert 2
+Insert 1
+Insert 8
+Insert 7
+Insert 9
+
+The tree:
+1 2 3 4 5 6 7 8 9 
+
+Current size is 9
+
+Does tree contains 1? 1
+Does tree contains 15? 0
+
+5 is in the root of the tree
+
+The parent of 3 is 5
+The parent of 7 is 8
+
+The left offspring of 5 is 3
+The right offspring of 6 is 8
+The left offspring of 8 is 7
+
+Let's deconstruct the tree from its root:
+Step 1
+Root to remove is 6
+New tree:
+1 2 3 4 6 7 8 9 
+Current size is 8
+6 is in a new root of the tree
+
+Step 2
+Root to remove is 7
+New tree:
+1 2 3 4 7 8 9 
+Current size is 7
+7 is in a new root of the tree
+
+Step 3
+Root to remove is 8
+New tree:
+1 2 3 4 8 9 
+Current size is 6
+8 is in a new root of the tree
+
+Step 4
+Root to remove is 9
+New tree:
+1 2 3 4 9 
+Current size is 5
+9 is in a new root of the tree
+
+Step 5
+Root to remove is 3
+New tree:
+1 2 3 4 
+Current size is 4
+3 is in a new root of the tree
+
+Step 6
+Root to remove is 4
+New tree:
+1 2 4 
+Current size is 3
+4 is in a new root of the tree
+
+Step 7
+Root to remove is 2
+New tree:
+1 2 
+Current size is 2
+2 is in a new root of the tree
+
+Step 8
+Root to remove is 1
+New tree:
+1 
+Current size is 1
+1 is in a new root of the tree
+
