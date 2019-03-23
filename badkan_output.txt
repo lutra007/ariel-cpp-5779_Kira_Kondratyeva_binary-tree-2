@@ -1,0 +1,120 @@
+> Submitting to backend port: 5671
+> {"exercise":"bayHogkjxySS7cqMI54xjKiuF4l2_2/binary-tree","git_url":"https://github.com/lutra007/ariel-cpp-5779_Kira_Kondratyeva_binary-tree-2.git","ids":"340891472--","name":"Matala 2: binary tree"}
+< Submission starting!
+> {"exercise":"bayHogkjxySS7cqMI54xjKiuF4l2_2/binary-tree","git_url":"https://github.com/lutra007/ariel-cpp-5779_Kira_Kondratyeva_binary-tree-2.git","ids":"340891472--","name":"Matala 2: binary tree"}
+< ! cd lutra007
+< ! cd ariel-cpp-5779_Kira_Kondratyeva_binary-tree-2
+< ! git fetch, reset, clean
+< warning: no common commits
+< From https://github.com/lutra007/ariel-cpp-5779_Kira_Kondratyeva_binary-tree-2
+< + 7a849a8...c1b6577 master -> origin/master (forced update)
+< HEAD is now at c1b6577 first commit
+< copying from /root/badkan/exercises/bayHogkjxySS7cqMI54xjKiuF4l2_2/binary-tree
+<
+<
+< *** Grade binary-tree ***
+<
+< rm -f *.o demo test
+< ! make demo
+< clang++-5.0 -std=c++17 --compile TreeDemo.cpp -o TreeDemo.o
+< In file included from TreeDemo.cpp:11:
+< ./Tree.hpp:149:3: warning: control may reach end of non-void function [-Wreturn-type]
+< }
+< ^
+< ./Tree.hpp:161:3: warning: control may reach end of non-void function [-Wreturn-type]
+< }
+< ^
+< ./Tree.hpp:192:3: warning: control may reach end of non-void function [-Wreturn-type]
+< }
+< ^
+< 3 warnings generated.
+< clang++-5.0 -std=c++17 --compile Tree.cpp -o Tree.o
+< In file included from Tree.cpp:2:
+< ./Tree.hpp:149:3: warning: control may reach end of non-void function [-Wreturn-type]
+< }
+< ^
+< ./Tree.hpp:161:3: warning: control may reach end of non-void function [-Wreturn-type]
+< }
+< ^
+< ./Tree.hpp:192:3: warning: control may reach end of non-void function [-Wreturn-type]
+< }
+< ^
+< Tree.cpp:47:8: warning: expression result unused [-Wunused-value]
+< for (curr_size; curr_size > 1; curr_size--) {
+< ^~~~~~~~~
+< 4 warnings generated.
+< clang++-5.0 -std=c++17 TreeDemo.o Tree.o -o demo
+< Tree.o: In function `ariel::Tree::bring_left(Node*&)':
+< Tree.cpp:(.text+0x1110): multiple definition of `ariel::Tree::bring_left(Node*&)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x1110): first defined here
+< Tree.o: In function `ariel::Tree::del(Node*&)':
+< Tree.cpp:(.text+0x40): multiple definition of `ariel::Tree::del(Node*&)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x40): first defined here
+< Tree.o: In function `ariel::Tree::leaf(int, bool, Node*&)':
+< Tree.cpp:(.text+0xce0): multiple definition of `ariel::Tree::leaf(int, bool, Node*&)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0xce0): first defined here
+< Tree.o: In function `ariel::Tree::left(int)':
+< Tree.cpp:(.text+0xbd0): multiple definition of `ariel::Tree::left(int)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0xbd0): first defined here
+< Tree.o: In function `ariel::Tree::root(Node*&)':
+< Tree.cpp:(.text+0x470): multiple definition of `ariel::Tree::root(Node*&)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x470): first defined here
+< Tree.o: In function `ariel::Tree::root()':
+< Tree.cpp:(.text+0x440): multiple definition of `ariel::Tree::root()'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x440): first defined here
+< Tree.o: In function `ariel::Tree::size()':
+< Tree.cpp:(.text+0x540): multiple definition of `ariel::Tree::size()'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x540): first defined here
+< Tree.o: In function `ariel::Tree::empty(Node*&)':
+< Tree.cpp:(.text+0x10d0): multiple definition of `ariel::Tree::empty(Node*&)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x10d0): first defined here
+< Tree.o: In function `ariel::Tree::print(Node*&)':
+< Tree.cpp:(.text+0x110): multiple definition of `ariel::Tree::print(Node*&)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x110): first defined here
+< Tree.o: In function `ariel::Tree::print()':
+< Tree.cpp:(.text+0xd0): multiple definition of `ariel::Tree::print()'
+< TreeDemo.o:TreeDemo.cpp:(.text+0xd0): first defined here
+< Tree.o: In function `ariel::Tree::right(int)':
+< Tree.cpp:(.text+0xfc0): multiple definition of `ariel::Tree::right(int)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0xfc0): first defined here
+< Tree.o: In function `ariel::Tree::insert(int)':
+< Tree.cpp:(.text+0x1a0): multiple definition of `ariel::Tree::insert(int)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x1a0): first defined here
+< Tree.o: In function `ariel::Tree::insert(int, Node*&)':
+< Tree.cpp:(.text+0x1e0): multiple definition of `ariel::Tree::insert(int, Node*&)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x1e0): first defined here
+< Tree.o: In function `ariel::Tree::parent(int)':
+< Tree.cpp:(.text+0x910): multiple definition of `ariel::Tree::parent(int)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x910): first defined here
+< Tree.o: In function `ariel::Tree::parent(int, int, Node*&)':
+< Tree.cpp:(.text+0xb00): multiple definition of `ariel::Tree::parent(int, int, Node*&)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0xb00): first defined here
+< Tree.o: In function `ariel::Tree::remove(int)':
+< Tree.cpp:(.text+0x690): multiple definition of `ariel::Tree::remove(int)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x690): first defined here
+< Tree.o: In function `ariel::Tree::remove(int, Node*&)':
+< Tree.cpp:(.text+0x7a0): multiple definition of `ariel::Tree::remove(int, Node*&)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x7a0): first defined here
+< Tree.o: In function `ariel::Tree::search(int, Node*&)':
+< Tree.cpp:(.text+0x590): multiple definition of `ariel::Tree::search(int, Node*&)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x590): first defined here
+< Tree.o: In function `ariel::Tree::contains(int)':
+< Tree.cpp:(.text+0x560): multiple definition of `ariel::Tree::contains(int)'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x560): first defined here
+< Tree.o: In function `ariel::Tree::~Tree()':
+< Tree.cpp:(.text+0x0): multiple definition of `ariel::Tree::~Tree()'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x0): first defined here
+< Tree.o: In function `ariel::Tree::~Tree()':
+< Tree.cpp:(.text+0x0): multiple definition of `ariel::Tree::~Tree()'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x0): first defined here
+< Tree.o: In function `main':
+< Tree.cpp:(.text+0x11b0): multiple definition of `main'
+< TreeDemo.o:TreeDemo.cpp:(.text+0x11b0): first defined here
+< clang: error: linker command failed with exit code 1 (use -v to see invocation)
+< make: *** [demo] Error 1
+< Makefile:4: recipe for target 'demo' failed
+<
+< *** Error code: 2. Grade: 0 ***
+< Final Grade: 0
+< Exit code: 1
+< Submission completed!
