@@ -1,4 +1,9 @@
 all:
-	g++ -std=c++11 Tree.cpp -o Tree.o
+	clang++-5.0 -std=c++17 TreeTest.cpp Tree.cpp
+tree:	
+	clang++-5.0 -std=c++17 Tree.cpp
+test:
+	clang++-5.0 -std=c++17 TreeTest.cpp
 demo:
-	g++ -std=c++11 TreeDemo.cpp -o TreeDemo.o
+	clang++-5.0 -std=c++17 TreeDemo.cpp -o TreeDemo.o
+

@@ -1,0 +1,95 @@
+clang++-5.0 -std=c++17 TreeTest.cpp Tree.cpp
+In file included from TreeTest.cpp:11:
+./Tree.hpp:150:3: warning: control may reach end of non-void function [-Wreturn-type]
+  }
+  ^
+./Tree.hpp:162:3: warning: control may reach end of non-void function [-Wreturn-type]
+  }
+  ^
+./Tree.hpp:193:3: warning: control may reach end of non-void function [-Wreturn-type]
+  }
+  ^
+3 warnings generated.
+In file included from Tree.cpp:2:
+./Tree.hpp:150:3: warning: control may reach end of non-void function [-Wreturn-type]
+  }
+  ^
+./Tree.hpp:162:3: warning: control may reach end of non-void function [-Wreturn-type]
+  }
+  ^
+./Tree.hpp:193:3: warning: control may reach end of non-void function [-Wreturn-type]
+  }
+  ^
+Tree.cpp:47:8: warning: expression result unused [-Wunused-value]
+  for (curr_size; curr_size > 1; curr_size--) {
+       ^~~~~~~~~
+4 warnings generated.
+/tmp/Tree-91746c.o: In function `ariel::Tree::bring_left(ariel::Tree::Node*&)':
+Tree.cpp:(.text+0x1110): multiple definition of `ariel::Tree::bring_left(ariel::Tree::Node*&)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x1130): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::del(ariel::Tree::Node*&)':
+Tree.cpp:(.text+0x40): multiple definition of `ariel::Tree::del(ariel::Tree::Node*&)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x60): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::leaf(int, bool, ariel::Tree::Node*&)':
+Tree.cpp:(.text+0xce0): multiple definition of `ariel::Tree::leaf(int, bool, ariel::Tree::Node*&)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0xd00): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::left(int)':
+Tree.cpp:(.text+0xbd0): multiple definition of `ariel::Tree::left(int)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0xbf0): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::root(ariel::Tree::Node*&)':
+Tree.cpp:(.text+0x470): multiple definition of `ariel::Tree::root(ariel::Tree::Node*&)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x490): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::root()':
+Tree.cpp:(.text+0x440): multiple definition of `ariel::Tree::root()'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x460): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::size()':
+Tree.cpp:(.text+0x540): multiple definition of `ariel::Tree::size()'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x560): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::empty(ariel::Tree::Node*&)':
+Tree.cpp:(.text+0x10d0): multiple definition of `ariel::Tree::empty(ariel::Tree::Node*&)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x10f0): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::print(ariel::Tree::Node*&)':
+Tree.cpp:(.text+0x110): multiple definition of `ariel::Tree::print(ariel::Tree::Node*&)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x130): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::print()':
+Tree.cpp:(.text+0xd0): multiple definition of `ariel::Tree::print()'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0xf0): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::right(int)':
+Tree.cpp:(.text+0xfc0): multiple definition of `ariel::Tree::right(int)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0xfe0): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::insert(int)':
+Tree.cpp:(.text+0x1a0): multiple definition of `ariel::Tree::insert(int)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x1c0): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::insert(int, ariel::Tree::Node*&)':
+Tree.cpp:(.text+0x1e0): multiple definition of `ariel::Tree::insert(int, ariel::Tree::Node*&)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x200): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::parent(int)':
+Tree.cpp:(.text+0x910): multiple definition of `ariel::Tree::parent(int)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x930): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::parent(int, int, ariel::Tree::Node*&)':
+Tree.cpp:(.text+0xb00): multiple definition of `ariel::Tree::parent(int, int, ariel::Tree::Node*&)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0xb20): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::remove(int)':
+Tree.cpp:(.text+0x690): multiple definition of `ariel::Tree::remove(int)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x6b0): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::remove(int, ariel::Tree::Node*&)':
+Tree.cpp:(.text+0x7a0): multiple definition of `ariel::Tree::remove(int, ariel::Tree::Node*&)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x7c0): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::search(int, ariel::Tree::Node*&)':
+Tree.cpp:(.text+0x590): multiple definition of `ariel::Tree::search(int, ariel::Tree::Node*&)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x5b0): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::contains(int)':
+Tree.cpp:(.text+0x560): multiple definition of `ariel::Tree::contains(int)'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x580): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::~Tree()':
+Tree.cpp:(.text+0x0): multiple definition of `ariel::Tree::~Tree()'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x20): first defined here
+/tmp/Tree-91746c.o: In function `ariel::Tree::~Tree()':
+Tree.cpp:(.text+0x0): multiple definition of `ariel::Tree::~Tree()'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x20): first defined here
+/tmp/Tree-91746c.o: In function `main':
+Tree.cpp:(.text+0x11b0): multiple definition of `main'
+/tmp/TreeTest-493a09.o:TreeTest.cpp:(.text+0x11d0): first defined here
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Makefile:2: recipe for target 'all' failed
+make: *** [all] Error 1

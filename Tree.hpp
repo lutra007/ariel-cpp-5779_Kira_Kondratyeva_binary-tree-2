@@ -1,12 +1,6 @@
 #include <iostream>
 using namespace std;
 
-struct Node {
-  int x;
-  Node *left;
-  Node *right;
-};
-
 namespace ariel {
 class Tree {
 public:  
@@ -22,6 +16,12 @@ public:
   int size();
   
 private:
+  struct Node {
+    int x;
+    Node *left;
+    Node *right;
+  };
+
   Node *my_tree = NULL;
   int tree_size = 0;
   
@@ -35,7 +35,7 @@ private:
   bool empty(Node *&MyTree);
   int root(Node *&my_tree);
   void del(Node *&my_tree);
-};  
+};
   
 Tree::~Tree() {
     del(my_tree);
@@ -260,7 +260,7 @@ void Tree::remove(int x, Node *&MyTree) {
     }
   }
 
-//I have a memory leak somewhere here
+//I have a memory leak somewhere below
 int Tree::bring_left(Node *&MyTree) {
     bool lside_is_empty = empty(MyTree->left);
     if (lside_is_empty) {

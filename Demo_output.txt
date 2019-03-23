@@ -1,6 +1,0 @@
-lutra@edge:~/Dropbox/Study/ArielUni/homeworks-cpp/binary-tree-1/ariel-cpp-5779_Kira_Kondratyeva_binary-tree-2$ g++ -std=c++11 TreeDemo.cpp; ./a.out
-emptytree: size=0
-threetree: size=3 root=5
-   3 5 7 
-
-35537

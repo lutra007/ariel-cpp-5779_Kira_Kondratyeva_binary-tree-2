@@ -15,7 +15,15 @@ int main() {
   ariel::Tree threetree;  
   ariel::Tree mytree;
 
-  threetree.insert(5).insert(7).insert(3);
+  vector <int> my_data {5,3,6,4,2,1,8,7,9};
+  for (int i=0; i < my_data.size(); i++) {
+    int curr = my_data[i];
+    mytree.insert(curr);
+  }
+
+  threetree.insert(5);
+  threetree.insert(7);
+  threetree.insert(3);
   
   badkan::TestCase tc("Binary tree");
   tc
@@ -36,20 +44,13 @@ int main() {
   .CHECK_THROWS(threetree.insert(3))
   .CHECK_OK    (threetree.print())
 
-  .CHECK_THROWS(mytree.root())
-
-  vector <int> my_data {5,3,6,4,2,1,8,7,9};
-  for (int i=0; i < my_data.size(); i++) {
-    int curr = my_data[i];
-    mytree.insert(curr);
-  }
-
   .CHECK_EQUAL (mytree.size(), 9)
   .CHECK_EQUAL (mytree.root(), 5)
   .CHECK_EQUAL (mytree.contains(1), true)
   .CHECK_EQUAL (mytree.contains(15), false)
 
   .CHECK_OK    (mytree.insert(10))
+  .CHECK_THROWS(mytree.insert(7))
   .CHECK_THROWS(mytree.remove(11))
 
   .CHECK_EQUAL (mytree.parent(3), 5)
