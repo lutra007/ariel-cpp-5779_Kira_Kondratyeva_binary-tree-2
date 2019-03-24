@@ -28,6 +28,9 @@ int main() {
   badkan::TestCase tc("Binary tree");
   tc
   .CHECK_EQUAL (emptytree.size(), 0)
+
+  .CHECK_THROWS(emptytree.root()) //should throw an exception: "Empty tree!"
+
   .CHECK_OK    (emptytree.insert(5))
   .CHECK_EQUAL (emptytree.size(), 1)
   .CHECK_EQUAL (emptytree.contains(5), true)
@@ -50,17 +53,17 @@ int main() {
   .CHECK_EQUAL (mytree.contains(15), false)
 
   .CHECK_OK    (mytree.insert(10))
-  .CHECK_THROWS(mytree.insert(7))
-  .CHECK_THROWS(mytree.remove(11))
+  .CHECK_THROWS(mytree.insert(7)) // should throw an exception: "7 already exists"
+  .CHECK_THROWS(mytree.remove(11)) // should throw an exception: "11 doesn't exist"
 
   .CHECK_EQUAL (mytree.parent(3), 5)
   .CHECK_EQUAL (mytree.parent(9), 8)
-  .CHECK_THROWS(mytree.parent(5))
+  .CHECK_THROWS(mytree.parent(5)) //should throw an exception: "No parent for root!"
 
   .CHECK_EQUAL (mytree.left(5), 3)
   .CHECK_EQUAL (mytree.right(6), 8)
-  .CHECK_THROWS(mytree.left(6))
-  .CHECK_THROWS(mytree.right(4))
+  .CHECK_THROWS(mytree.left(6)) //should throw an exception: "6 doesn't have a left child!"
+  .CHECK_THROWS(mytree.right(4)) //should throw an exception: "4 doesn't have a right child!"
 
   .CHECK_OK    (mytree.print())
 
